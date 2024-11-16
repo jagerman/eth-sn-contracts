@@ -291,6 +291,7 @@ while True:
 
     except Exception as e:
         print(f"oxend liquidation list request failed: {e}", file=sys.stderr)
+        time.sleep(3)
         continue
 
     for sn in liquidate:
